@@ -165,17 +165,17 @@ header .navbar-expand-lg .nav-item .nav-link::before {
   opacity: 0;
   background-color: #ee3b24;
 }
+header .navbar-expand-lg .nav-item:not(.active) .nav-link:hover::before {
+  height: 3px;
+  opacity: 1;
+  bottom: 10px;
+}
 header .navbar-expand-lg .nav-item.active .nav-link {
   color: #ee3b24;
   text-shadow: 0 0 1px #ee3b24;
 }
 header .navbar-expand-lg .nav-item.active .nav-link::before {
   transition: opacity 2s;
-  height: 3px;
-  opacity: 1;
-  bottom: 10px;
-}
-header .navbar-expand-lg .nav-item:not(.active) .nav-link:hover::before {
   height: 3px;
   opacity: 1;
   bottom: 10px;
@@ -232,8 +232,8 @@ header .navbar-toggler {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   left: 0;
   background-color: #000000;
   z-index: 0;
@@ -429,11 +429,11 @@ header .navbar-toggler {
   z-index: 0;
   padding: 15px;
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .blog .container .blog-item__descript::before {
-  position: absolute;
   z-index: -1;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -582,7 +582,7 @@ header .navbar-toggler {
   color: #ee3b24;
 }
 .footer__descript {
-  font-size: 14px;
+  font-size: 0.85rem;
 }
 .footer .ul {
   list-style: none;
@@ -593,13 +593,13 @@ header .navbar-toggler {
   margin-left: -25px;
   content: "\f30b";
   color: #b2b2b2;
-  font-size: 14px;
+  font-size: 0.85rem;
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
 }
 .footer .ul .li a {
   transition: 0.5s;
-  font-size: 14px;
+  font-size: 0.85rem;
   color: #b2b2b2;
   text-decoration: none;
 }
@@ -775,7 +775,7 @@ header .navbar-toggler {
     background-color: #282828;
   }
   .footer .dropdown-toggle .footer__titles {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #b2b2b2;
   }
   .footer .dropdown-toggle .footer__titles > span {
@@ -793,13 +793,13 @@ header .navbar-toggler {
     margin-left: -25px;
     content: "\f30b";
     color: #b2b2b2;
-    font-size: 14px;
+    font-size: 0.85rem;
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
   }
   .footer .dropdown-item.li a {
     transition: 0.5s;
-    font-size: 14px;
+    font-size: 0.85rem;
     color: #b2b2b2;
     text-decoration: none;
   }
@@ -819,7 +819,7 @@ header .navbar-toggler {
     display: block;
   }
   .footer__descript {
-    font-size: 14px;
+    font-size: 0.85rem;
   }
   .advantages__descript {
     text-align: justify;
