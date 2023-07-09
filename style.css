@@ -157,28 +157,24 @@ header .navbar-expand-lg .nav-item .nav-link {
 header .navbar-expand-lg .nav-item .nav-link::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   height: 0;
   width: 100%;
   opacity: 0;
   background-color: #ee3b24;
 }
+header .navbar-expand-lg .nav-item:not(.active) .nav-link:hover {
+  text-shadow: 0 0 1px #ee3b24;
+}
 header .navbar-expand-lg .nav-item:not(.active) .nav-link:hover::before {
   height: 3px;
   opacity: 1;
   bottom: 10px;
-  background-color: white;
-}
-header .navbar-expand-lg .nav-item.active .nav-link {
-  color: #ee3b24;
-  text-shadow: 0 0 1px #ee3b24;
 }
 header .navbar-expand-lg .nav-item.active .nav-link::before {
   height: 3px;
   opacity: 1;
-  bottom: 10px;
-  background-color: #ee3b24;
 }
 header .navbar-expand-lg.header-navbar--scrolled {
   position: fixed;
@@ -186,7 +182,7 @@ header .navbar-expand-lg.header-navbar--scrolled {
   left: 0;
   right: 0;
   padding: 0;
-  background-color: rgba(1, 1, 1, 0.8509803922);
+  background-color: rgba(1, 1, 1, 0.6156862745);
 }
 header .navbar-nav {
   display: flex;
