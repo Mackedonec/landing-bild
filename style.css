@@ -869,6 +869,11 @@ header .navbar-toggler {
   .features .container .feature-descript {
     text-align: center;
   }
+  .features .container .feature:hover .fas,
+  .features .container .feature:hover .fab {
+    transform: translate(0, 15%);
+    margin: 10px auto 30px;
+  }
   .about .container .row .col-lg-6 p {
     text-align: justify;
   }
