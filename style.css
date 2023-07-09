@@ -654,6 +654,54 @@ header .navbar-toggler {
   top: 40%;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__title-one, .footer__title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer__descript {
+    padding-left: 35px;
+    padding-right: 15px;
+    text-align: justify;
+  }
+  .footer .ul {
+    padding-left: 55px;
+  }
+  .advantages {
+    position: relative;
+  }
+  .advantages::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/background.jpg);
+    min-height: 100vh;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .advantages::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7882352941);
+  }
+  .advantages .container-fluid {
+    position: relative;
+    z-index: 1;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    max-width: 720px;
+  }
+  .advantages__img {
+    display: none;
+  }
+}
 @media screen and (max-width: 991px) {
   .blog .container,
   .about .container,
@@ -690,40 +738,6 @@ header .navbar-toggler {
   .about .container .progress-box .progress .progress-bar {
     background-color: #ee3b24;
   }
-  .advantages {
-    position: relative;
-  }
-  .advantages::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(assets/img/background.jpg);
-    min-height: 100vh;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  .advantages::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7882352941);
-  }
-  .advantages .container-fluid {
-    position: relative;
-    z-index: 1;
-    padding-top: 105px;
-    padding-bottom: 75px;
-    max-width: 720px;
-  }
-  .advantages__img {
-    display: none;
-  }
 }
 @media screen and (max-width: 767px) {
   .blog .container,
@@ -744,36 +758,11 @@ header .navbar-toggler {
   .footer__top {
     padding: 45px 0 30px;
   }
+  .footer__title-one {
+    text-align: center;
+  }
   .footer__title {
     display: none;
-  }
-  .footer .ul {
-    list-style: none;
-  }
-  .footer .ul .li::before {
-    transition: 0.5s;
-    position: absolute;
-    margin-left: -25px;
-    content: "\f30b";
-    color: #b2b2b2;
-    font-size: 14px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-  }
-  .footer .ul .li a {
-    transition: 0.5s;
-    font-size: 14px;
-    color: #b2b2b2;
-    text-decoration: none;
-  }
-  .footer .ul .li:hover::before {
-    transition: 0.5s;
-    margin-left: -20px;
-    color: #ee3b24;
-  }
-  .footer .ul .li:hover a {
-    transition: 0.5s;
-    color: #ee3b24;
   }
   .footer .dropdown-toggle {
     margin: 0 auto;
@@ -832,11 +821,22 @@ header .navbar-toggler {
   .footer__descript {
     font-size: 14px;
   }
-  .footer__bottom {
-    color: #b2b2b2;
+  .advantages__descript {
+    text-align: justify;
+  }
+  .features .container .feature-img .fas,
+  .features .container .feature-img .fab {
+    margin: 10px auto 30px;
+  }
+  .features .container .feature-title {
     text-align: center;
-    padding: 30px 0;
-    margin: 0 auto;
+    margin: 0 0 8px;
+  }
+  .features .container .feature-descript {
+    text-align: center;
+  }
+  .about .container .row .col-lg-6 p {
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=style.css.map */
