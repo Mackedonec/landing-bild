@@ -265,19 +265,26 @@ header .navbar-toggler {
   max-width: 500px;
   margin-left: auto;
 }
-.about .container .progress-box .progress-title {
+.about .container .progress-box .progress-item {
+  transition: 0.5s;
+}
+.about .container .progress-box .progress-item .progress-title {
   font-weight: 400;
   line-height: 1.2;
   font-size: 1.125rem;
   margin-bottom: 8px;
 }
-.about .container .progress-box .progress {
+.about .container .progress-box .progress-item .progress {
   max-width: 455px;
   height: 20px;
   margin-bottom: 30px;
 }
-.about .container .progress-box .progress .progress-bar {
+.about .container .progress-box .progress-item .progress .progress-bar {
   background-color: #ee3b24;
+}
+.about .container .progress-box .progress-item:hover {
+  transition: 0.5s;
+  margin-left: -20px;
 }
 
 .features {
@@ -296,6 +303,7 @@ header .navbar-toggler {
 }
 .features .container .feature-img .fas,
 .features .container .feature-img .fab {
+  transition: 0.5s;
   display: flex;
   width: 80px;
   height: 90px;
@@ -306,6 +314,12 @@ header .navbar-toggler {
   align-items: center;
   justify-content: center;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.features .container .feature:hover .fas,
+.features .container .feature:hover .fab {
+  transition: 0.5s;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .features .container .feature-title {
   text-align: center;
@@ -475,11 +489,16 @@ header .navbar-toggler {
   width: 100%;
   background-color: #d8d8d8;
 }
+.advantages:hover .advantages__img {
+  transition: 0.5s;
+  filter: saturate(1.15);
+}
 .advantages__img {
   background-image: url(assets/img/background.jpg);
   min-height: 100vh;
   background-position: 33% 50%;
   background-size: cover;
+  filter: saturate(0.65);
 }
 .advantages__content {
   min-height: 100vh;
@@ -500,11 +519,16 @@ header .navbar-toggler {
 .advantages .advantages-item {
   display: flex;
 }
+.advantages .advantages-item:hover .advantages-item__icon i {
+  transition: 0.5s;
+  padding-left: 25px;
+}
 .advantages .advantages-item__icon {
   padding-right: 15px;
   flex-grow: 0;
 }
 .advantages .advantages-item__icon i {
+  transition: 0.5s;
   width: 60px;
   margin-top: 7.5px;
   text-align: center;
@@ -588,6 +612,7 @@ header .navbar-toggler {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-left: 30px;
 }
 .footer .ul .li::before {
   transition: 0.5s;
@@ -614,7 +639,8 @@ header .navbar-toggler {
   transition: 0.5s;
   color: #ee3b24;
 }
-.footer .dropdown button {
+.footer .dropdown button,
+.footer .dropdown-menu button {
   display: none;
 }
 .footer__bottom {
@@ -764,7 +790,14 @@ header .navbar-toggler {
     text-align: center;
   }
   .footer__title {
-    display: none;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
   }
   .footer .dropdown-toggle {
     margin: 0 auto;
@@ -784,10 +817,12 @@ header .navbar-toggler {
     color: #ee3b24;
   }
   .footer .dropdown-menu {
+    padding: 0;
     background-color: #282828;
+    border: none;
   }
   .footer .dropdown-item.li {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .footer .dropdown-item.li::before {
     transition: 0.5s;
