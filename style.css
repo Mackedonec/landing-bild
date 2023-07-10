@@ -747,6 +747,7 @@ header .navbar-toggler {
     bottom: 4px;
   }
   .about .container .progress-box {
+    max-width: 440px;
     margin: auto;
   }
   .about .container .progress-box .progress-title {
