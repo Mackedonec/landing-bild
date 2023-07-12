@@ -647,6 +647,7 @@ header .navbar-toggler {
   margin: 0 auto;
 }
 .footer .back2top {
+  z-index: 2;
   position: fixed;
   right: 15px;
   bottom: 15px;
